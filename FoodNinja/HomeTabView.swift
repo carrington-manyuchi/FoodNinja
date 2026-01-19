@@ -36,7 +36,7 @@ struct HomeTabView: View {
                 ProfileView(viewModel: authViewModel)
             }
             .tabItem {
-                Label("Profile", systemImage: ImageName.profile.rawValue)
+                Label("Profile", systemImage: ImageName.person.rawValue)
             }
             .tag(1)
             
@@ -58,7 +58,7 @@ struct HomeTabView: View {
             }
             .tag(3)
         }
-        .accentColor(.darkGreen)
+        .accentColor(.red)
     }
 }
 
