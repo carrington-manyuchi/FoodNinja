@@ -18,6 +18,15 @@ enum ImageName: String {
     case eyeSlash = "eye.slash"
     case checkMarkFilled = "checkmark.circle.fill"
     case checkmark = "checkmark.circle"
+    
+    case home = "house.fill"
+
+    case settings = "gear"
+      
+    case more = "ellipsis.circle.fill"
+      
+      case email = "envelope.fill"
+      case password = "lock.fill"
 }
 
 extension Image {

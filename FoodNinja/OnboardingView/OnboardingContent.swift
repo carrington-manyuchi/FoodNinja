@@ -22,6 +22,11 @@ struct OnboardingContent: View {
             Image(name: page.imageName)
                 .resizable()
                 .scaledToFit()
+                .offset(y: isAnimating ? 45 : 0)
+                .animation(
+                    .easeInOut(duration: 5)
+                    .repeatForever(autoreverses: true), value: isAnimating
+                )
                 .opacity(isAnimating ? 1 : 0)
 
             
